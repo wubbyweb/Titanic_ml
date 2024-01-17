@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Titanic predictor</title>
+    </head>
+
+    <body>
+        <h1>Home Page</h1>
+        <h3>Get your titanic predictions here!</h3>
+        <p>Enter in the details of  a made up person on the titanic voyage</p>
+        <p>We will output a prediction</p>
+
+        <form action="{% url 'result' %}">
+            {% csrf_token %}
+            <input type="text" name="age">
+            <input type="submit">
+        </form>
+    
+    </body>
+
+</html>
