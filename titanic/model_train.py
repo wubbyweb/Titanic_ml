@@ -57,4 +57,4 @@ print("Accuracy: {}".format(acc_randomforest))
 
 
 
-#pickle.dump(randomforest, open('titanic_model.sav','wb'))
+pickle.dump(randomforest, open('titanic_model.sav','wb'))
